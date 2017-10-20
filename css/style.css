@@ -1,0 +1,158 @@
+div {
+     padding:0;
+     margin:0;
+     font-family: "Times New Roman", sans-serif;   
+}
+
+.container {
+    padding-left:15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Flexbox: to fill extra space in the row */
+.row{
+    display: flex;
+}
+
+/* Naming different columns of the Grid */
+
+/* 1/12th of 100 */
+.col-md-1{
+    width:8.3%;
+}
+
+/* 1/6th (= 2/12) of 100 */
+.col-md-2{
+    width:16.67%;
+}
+
+/* 1/4th (=3/12) part of 100 */
+.col-md-3{
+    width:25%; 
+}
+
+/* 1/3rd (=4/12) part of 100 */
+.col-md-4{
+    width:33.3% 
+}
+
+/* (5/12) part of 100 */
+.col-md-5{
+    width:41.67%;
+}
+
+/* 1/2 (=6/12) part of 100 */
+.col-md-6{
+    width:50%;
+}
+
+/* (7/12) part of 100 */
+.col-md-7{
+    width:58.3%
+}
+
+/* All 12 columns */
+.col-md-12{
+    width:100%;
+}
+
+/* Test case and alignment */
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+/* Header properties */
+
+h3 {
+    font-size: 18px;
+    text-align: center;
+    color:#7d97ad;
+    padding:5px 5%;
+}
+
+h2 {
+    font-size: 200%;
+    text-align: left;
+    color:#7d97ad;
+    padding-left: 10px;
+}
+
+/* Image properties */
+
+.responsive-image{
+    width: 100%;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+.logo{
+    width:100px;
+}
+
+.space-right-10{
+     margin-right: 10px;
+ }
+ 
+ /* Sectional line */
+ hr {
+    height: 5px;
+    background-color:#7d97ad;
+ }
+
+/* Paragraph properties */
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 5px;
+}
+
+@media screen and (max-width: 700px){
+    /* Small screen sizes */
+    .col-md-4, .col-md-3{
+        width:100%;       
+    }
+    
+    .col-md-3{
+        margin: auto;
+        display: block;
+    }
+    .logo{
+        width:100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .row{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+    h1,h4 {
+        text-align: center;
+    }
+}
